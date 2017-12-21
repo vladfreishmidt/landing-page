@@ -1,0 +1,10 @@
+/**************
+Logo
+**************/
+.logo {
+  width: 129px;
+  height: 108px;
+}
+.logo__img {
+  width: 100%;
+}
