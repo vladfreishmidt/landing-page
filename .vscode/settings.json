@@ -1,6 +1,0 @@
-{
-  "less.compile": {
-    "main": "index.less",
-    "out": "../styles.css"
-  }
-}
