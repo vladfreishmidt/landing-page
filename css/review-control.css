@@ -1,0 +1,13 @@
+.review-control__item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.review-control__item--active,
+.review-control__item:hover {
+  background-color: #fff;
+}
