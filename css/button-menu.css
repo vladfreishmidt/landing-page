@@ -21,3 +21,6 @@ button menu
   background-color: #eee;
   color: #333;
 }
+#checkbox-button-menu:checked + .button-menu {
+  display: block;
+}

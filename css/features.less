@@ -1,0 +1,50 @@
+
+ .features {
+   padding: 100px 10%;
+
+   &__list {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+   }
+
+   &__item {
+     width: 360px;
+     padding: 0 10px;
+     text-align: center;
+
+     &:before {
+       content: "";
+       width: 107px;
+       height: 107px;
+       border: 1px solid #000;
+       border-radius: 50%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 50%;
+       display: inline-block;
+       margin-bottom: 20px;
+     }
+
+     &--burger:before {
+       background-image: url('../img/burger.png');
+     }
+
+     &--money:before {
+       background-image: url('../img/money.png');
+     }
+
+     &--man:before {
+       background-image: url('../img/man.png');
+   }
+ }
+   &__description {
+     margin: 0;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 18px;
+     color: #8b8b8b;
+   }
+ }

@@ -35,7 +35,26 @@ Logo
 .logo__img {
   width: 100%;
 }
-/* main menu */
+.section__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 19px;
+}
+.section__title:after {
+  content: "";
+  width: 88px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: #f69679;
+}
+.section__title--left {
+  align-items: left;
+}
 /***********************
 MENU
 ***********************/
@@ -83,7 +102,9 @@ button menu
   background-color: #eee;
   color: #333;
 }
-/* main */
+#checkbox-button-menu:checked + .button-menu {
+  display: block;
+}
 /***************
 section: MAIN
 ***************/
@@ -141,4 +162,90 @@ section: MAIN
 .main__description a {
   text-decoration: underline;
   text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+}
+.features {
+  padding: 100px 10%;
+}
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.features__item {
+  width: 360px;
+  padding: 0 10px;
+  text-align: center;
+}
+.features__item:before {
+  content: "";
+  width: 107px;
+  height: 107px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.features__item--burger:before {
+  background-image: url('../img/burger.png');
+}
+.features__item--money:before {
+  background-image: url('../img/money.png');
+}
+.features__item--man:before {
+  background-image: url('../img/man.png');
+}
+.features__description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #8b8b8b;
+}
+.app {
+  padding: 180px 10% 0;
+  background-color: #f7f7f7;
+  height: 700px;
+  display: flex;
+}
+.app__image {
+  width: 523px;
+  background-image: url('../img/app-bg-iphone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -80px;
+}
+.app__content {
+  width: 543px;
+  margin-left: auto;
+}
+.app__description {
+  color: #8b8b8b;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 0 0 30px;
+}
+.app__link {
+  display: inline-block;
+  margin-right: 10px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.app__link--appstore {
+  background-image: url('../img/appstore.png');
+  width: 112px;
+  height: 39px;
+}
+.app__link--googleplay {
+  background-image: url('../img/googleplay.png');
+  width: 120px;
+  height: 39px;
 }
