@@ -55,6 +55,9 @@ Logo
 .section__title--left {
   align-items: left;
 }
+.section__title--meals {
+  margin-bottom: 50px;
+}
 .review-control__item {
   width: 10px;
   height: 10px;
@@ -289,4 +292,95 @@ section: MAIN
   line-height: 36px;
   font-style: italic;
   margin-bottom: 40px;
+}
+.meals {
+  padding: 50px 0;
+}
+.meals__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.meals__item {
+  background-image: url('../img/meals/italian.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 20%;
+  height: 225px;
+  color: #fff;
+  position: relative;
+}
+.meals__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+  text-align: center;
+  letter-spacing: 0.768px;
+}
+.meals__counter {
+  font-size: 15px;
+  line-height: 30px;
+  font-style: italic;
+}
+.meals__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.recipes-counter {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  padding: 0 10% ;
+  margin-top: -25px;
+}
+.recipes-counter__item {
+  text-align: center;
+}
+.recipes-counter__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 12px;
+}
+.recipes-counter__description {
+  margin: 0;
+  color: #8b8b8b;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.footer {
+  height: 93px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  font-size: 14px;
+}
+.footer__copyright {
+  color: rgba(139, 139, 139, 0.5);
+  margin: 0;
+}
+.footer__design {
+  margin: 0;
+  color: #8b8b8b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer__link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
 }
